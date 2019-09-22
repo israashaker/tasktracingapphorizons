@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="tasktrackingModelStoreContainer" CdmEntityContainer="DBModels">
+    <EntitySetMapping Name="myTasks">
+      <EntityTypeMapping TypeName="tasktrackingModel.myTask">
+        <MappingFragment StoreEntitySet="myTasks">
+          <ScalarProperty Name="taskId" ColumnName="taskId" />
+          <ScalarProperty Name="taskTitle" ColumnName="taskTitle" />
+          <ScalarProperty Name="taskDetails" ColumnName="taskDetails" />
+          <ScalarProperty Name="assigneeName" ColumnName="assigneeName" />
+          <ScalarProperty Name="project" ColumnName="project" />
+          <ScalarProperty Name="date" ColumnName="date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
